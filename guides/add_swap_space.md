@@ -13,15 +13,14 @@
     sudo swapon --show
     ```
 
-1. Now edit `/etc/fstab` file to make changes permanent.
+1. To make changes permanent paste this `/swapfile swap swap defaults 0 0` at end of `/etc/fstab` 
 
     ```
     vi /etc/fstab
     ```
-
-1. Paste this at end of file
+    OR
     ```
-    /swapfile swap swap defaults 0 0
+    sudo echo '/swapfile swap swap defaults 0 0' | sudo tee -a /etc/fstab
     ```
 
 **Removing swap**
