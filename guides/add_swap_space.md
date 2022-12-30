@@ -2,6 +2,7 @@
 ## Ubuntu  
 
 **Adding swapspace**  
+Change 1G to amount of space you want to allocate for swap.
 
 1. Run below commands:
     ```
