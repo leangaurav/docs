@@ -7,7 +7,7 @@ But below is the list of all commands to install docker in one place.
 1. Run these to install
     ```
     sudo apt-get update
-    sudo apt-get install \
+    sudo apt-get -y install \
         ca-certificates \
         curl \
         gnupg \
@@ -18,7 +18,7 @@ But below is the list of all commands to install docker in one place.
       "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
       $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     sudo apt-get update
-    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+    sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-compose-plugin
     ```
 
 1. Test if docker works:
