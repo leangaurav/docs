@@ -28,7 +28,7 @@ But below is the list of all commands to install docker in one place.
 
 1. If you get this `Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock:` error while running `docker ps`
     ```
-    sudo usermod -aG docker <replace with username>  # run 'whoami' to get username
+    sudo usermod -aG docker `whoami`  # 'whoami' returns username
     ```
  
  1. Reboot to let settings take effect
